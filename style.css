@@ -135,3 +135,9 @@ hr {
     opacity: 1;
     transition: all 0.3s ease-in-out;
 }
+.equilibrium:hover, .equilibrium::after {
+    background-color: rgba(0, 255, 255);
+    transition: all 0.2s ease-in-out;
+    opacity: .4;
+    cursor: pointer;
+}
