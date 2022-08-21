@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: auto;
+    width: 18rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 10px 5px 60px 10px rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+    animation: 2s ease-in-out;
+}
+
+.content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.card img {
+    height: 50%;
+    width: 92%;
+    border-radius: 5px;
+    margin: .5em auto .5em auto;
+}
+
+.eye {
+    position: absolute;
+    top: 34%;
+    right: 47%;
+    opacity: 0;
+}
+
+.section-one {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.section-one p {
+    align-self: flex-start;
+    margin-left: .8em;
+}
+
+.heading {
+    color: white;
+    font-weight: 400;
+    margin-top: .8rem;
+}
+
+.para {
+    font-size: .9rem;
+    line-height: 1.4;
+    color: grey;
+    margin-top: .8rem;
+}
+
+.eth {
+    display: flex;
+    justify-content: stretch;
+    margin: .8em;
+}
+
+.rate {
+    color: hsl(178, 100%, 50%);
+    font-size: .8rem;
+    margin-left: .5em;
+    margin-right: auto;
+}
+
+.time {
+    color: grey;
+    font-size: .86rem;
+    margin-left: .3em;
+}
+
+hr {
+    height: 1px;
+    color: rgb(185, 182, 182);
+    width: 91%;
+    align-self: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    height: 1.8em;
+    width: 1.8em;
+    margin: .8rem;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.creation {
+    font-size: 1rem;
+    color: grey;
+}
+
+.artist {
+    color: white;
+}
+
+
+/* Active states  */
+
+.heading:hover,
+.artist:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.equilibrium:hover+.eye,
+.eye:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.equilibrium:hover, .equilibrium::after {
+    background-color: rgba(0, 255, 255);
+    transition: all 0.2s ease-in-out;
+    opacity: .4;
+    cursor: pointer;
+}
