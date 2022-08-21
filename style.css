@@ -25,35 +25,29 @@
     justify-content: space-between;
     flex-direction: column;
     font-family: 'Outfit', sans-serif;
+    padding: 1rem;
+
 }
 
-.card:hover {
-    transform: scale(1.025);
-    cursor: pointer;
-    animation: 2s ease-in-out;
-}
-
-.content {
-    width: 90%;
-    height: 100%;
+.images {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    margin: 1rem;
 }
 
-.card img {
-    height: 50%;
+.images img {
     width: 92%;
     border-radius: 5px;
     margin: .5em auto .5em auto;
+    z-index: 1;
 }
 
 .eye {
     position: absolute;
-    top: 34%;
-    right: 47%;
+    top: 40%;
+    right: 40%;
     opacity: 0;
+    z-index: -999;
 }
 
 .section-one {
@@ -76,7 +70,7 @@
 .para {
     font-size: .9rem;
     line-height: 1.4;
-    color: grey;
+    color: rgb(187, 220, 246);
     margin-top: .8rem;
 }
 
@@ -94,16 +88,20 @@
 }
 
 .time {
-    color: grey;
+    color: rgb(187, 220, 246);
     font-size: .86rem;
     margin-left: .3em;
 }
 
 hr {
     height: 1px;
-    color: rgb(185, 182, 182);
-    width: 91%;
-    align-self: center;
+    border-width: 0;
+    color: rgb(187, 220, 246);
+    background-color: gray;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 90%;
+
 }
 
 .profile {
@@ -120,8 +118,8 @@ hr {
 }
 
 .creation {
-    font-size: 1rem;
-    color: grey;
+    font-size: .85rem;
+    color: rgb(187, 220, 246);
 }
 
 .artist {
@@ -134,6 +132,12 @@ hr {
 .heading:hover,
 .artist:hover {
     color: hsl(178, 100%, 50%);
+}
+
+.card:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+    animation: 2s ease-in-out;
 }
 
 .equilibrium:hover+.eye,
